@@ -5,8 +5,6 @@ var https = require('https')
 // just so it doesn't show up in automated searches
 var DEFAULT_KEY = Buffer.from('QUl6YVN5QW55eWZaZ0w4TWZ2WVctMnZOTWFhZ0xmekdyX0hST0NFCg==', 'base64') + ''
 
-console.log(DEFAULT_KEY)
-
 module.exports = function getVideoTitle (id) {
   return new Promise(resolve => {
     assert(typeof id === 'string', 'get-youtube-title: id must be string')
